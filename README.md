@@ -59,3 +59,8 @@ DatabaseReference root = database.child(“users”).child(“키”);//Root밑�
 <img width="281" alt="image" src="https://user-images.githubusercontent.com/90433342/220090634-3d47453f-0ede-4a59-bcb1-7b38968f1a74.png">
 
 ···
+
+### 보완해야할 점
+- 개인 아이디로 페이지가 넘어가야하고 저장되어야 하는 부분에서 오류가 발생하여 한 계정으로 임시로 저장되는 점.
+- 온도에 따른 개인 맞춤 설정에 대해 더 디테일하게 조건을 걸어놔야 하는 점.
+- ···
