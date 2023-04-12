@@ -31,24 +31,7 @@
 
 - SQL 형식이 아니라 NoSQL 형식의 DB이다. 실시간 데이터베이스는 구글 클라우드에 호스팅된 데이터베이스로써 데이터들이 JSON 형태로 저장된다. 저장된 데이터들을 불러올 때는 JSON 형태로 불러오는 것이 아니라 DataSnapshot 객체 형태로 가져오게 된다. 그래서 기존에 사용하던 방법(JSON 형태의 데이터를 가져와 사용하던 DB)과는 조금 다른 방식으로 데이터베이스를 사용해야 한다.
 
-FirebaseDatabase database = FirebaseDatabase.getInstance();
--	데이터베이스의 인스턴스를 가져온다고 생각 (즉,Root를 가져온다) 
-DatabaseReference root = database.getReference(“users”);
--	Root밑에 있는 “users”라는 위치를 참조한다.
 
-참조한 위치에 데이터를 저장
-Root.setValue(“아이디”)
--	setValue 함수를 이용해 데이터를 저장한다.
-<img width="229" alt="image" src="https://user-images.githubusercontent.com/90433342/220087145-4ba7191f-f979-486b-80d2-07d373b40522.png">
--	 setValue 함수는 자신이 참조한 위치에 데이터를 완전히 새로 갱신한다. 기존에 존재하던 데이터를 날리고 새로운 데이터로 덮어쓰는 형태이다.
-
-<img width="323" alt="image" src="https://user-images.githubusercontent.com/90433342/220087237-725e789d-9f1d-4c4f-8e79-5283a880fd9a.png">
--	왼쪽 그림과 같은 구조로 생성될 수 없다. 같은 user라는 키를 가지고 value가 다른 값을 생성할 수 없기 때문이다.
-
-<img width="254" alt="image" src="https://user-images.githubusercontent.com/90433342/220087474-d2048e39-d852-4b89-a775-2174cd7302be.png">
-그래서 이번 프로젝트에서는 키 값을 구분하여 저장하는 방법과 자식을 생성하여 value 값을 저장하는 방법을 사용하였다.
-
-DatabaseReference root = database.child(“users”).child(“키”);//Root밑에 “users”라는 자식을 생성 후 users 밑에 user 의 “키” 자식 생성 myRef.setValue(“”);// setValue 함수를 이용해 데이터를 저장.
 
 ### 사용자 맞춤화 알고리즘
 <img width="612" alt="image" src="https://user-images.githubusercontent.com/90433342/220088237-50dcdd46-723d-415c-be30-328a6bc5a219.png">
