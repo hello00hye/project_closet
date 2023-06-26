@@ -154,7 +154,7 @@
         android:lineSpacingExtra="7dp"
         android:paddingLeft="10dp"
         android:gravity="center"
-        android:text="admin 님에겐  추운  날씨에요"
+        android:text="이번주는  더운  날씨에요"
         android:textSize="13dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="25dp" />

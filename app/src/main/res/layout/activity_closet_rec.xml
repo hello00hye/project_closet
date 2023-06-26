@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/box_background2"
         android:fontFamily="@font/leferibaseregular"
         android:gravity="center"
@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/tv_rec_temp"
-        android:layout_width="50dp"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
         android:fontFamily="@font/leferibasebold"

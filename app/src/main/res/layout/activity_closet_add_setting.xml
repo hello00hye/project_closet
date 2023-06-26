@@ -159,7 +159,7 @@
 
     <TextView
         android:id="@+id/tv_rec_temp_add"
-        android:layout_width="45dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:fontFamily="@font/leferibasebold"

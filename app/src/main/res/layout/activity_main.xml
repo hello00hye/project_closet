@@ -16,6 +16,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/leferibaseregular"
         android:text="최고 : 7℃   최저 : -2℃"
+        android:visibility="invisible"
         android:textColor="#656565"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
@@ -126,7 +127,7 @@
         android:rotation="340"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/winter_jacket"
+        app:srcCompat="@drawable/ex_tee"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -138,7 +139,7 @@
         android:rotation="10"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/pants"
+        app:srcCompat="@drawable/ex_jeans"
         tools:ignore="MissingConstraints" />
 
     <GridLayout

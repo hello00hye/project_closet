@@ -215,7 +215,76 @@ public class Closet_rec_Activity extends Activity {
                         public void onCancelled(@NonNull DatabaseError error) {
 
                         }
+
                     });
+                    // 셔츠가 있는지 확인
+                    Query query_set = mDatabase3.orderByChild("closet").equalTo(usertop2);
+                    Query query_set2 = mDatabase3.orderByChild("feel").equalTo("더움");
+
+                    Query query_set3 = mDatabase3.orderByChild("feel").equalTo("너무 더움");
+
+                    // 더움 찾기
+                    query_set.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            // 해당 되는 snapshot 있으면 map에 저장
+                            Map<String, Object> map = (Map<String, Object>) snapshot.getValue();
+                            query_set2.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    // 해당 되는 snapshot 있으면 map에 저장
+                                    Map<String, Object> map2 = (Map<String, Object>) snapshot.getValue();
+                                    // 둘다 해당 되는 값이 있으면 실행
+                                    if (map != null && map2 != null) {
+                                        System.out.println("사용자에게 추천된 니트 '더움' 확인 완료 ");
+                                        String tv_text = "현재 추천된  [셔츠]  는 조금 더우실 수도 있어요.";
+                                        tv_notice.setText(tv_text);
+
+                                        tv_notice.setVisibility(View.VISIBLE);
+                                        tv_notice.setAnimation(animation);
+
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
+
+                            // 많이!! 더움 알림
+                            query_set3.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    // 해당 되는 snapshot 있으면 map에 저장
+                                    Map<String, Object> map3 = (Map<String, Object>) snapshot.getValue();
+
+                                    // 둘다 해당 되는 값이 있으면 실행
+                                    if (map != null && map3 != null) {
+                                        System.out.println("사용자에게 추천된 니트 '많이 !! 더움' 확인 완료 ");
+                                        String tv_text = "현재 추천된  [셔츠]  는 많이 더우실 수도 있어요.";
+                                        tv_notice.setText(tv_text);
+                                        tv_notice.setVisibility(View.VISIBLE);
+                                        tv_notice.setAnimation(animation);
+
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+
 
                 } else if (temp_range <= 22 && temp_range >= 20) {
                     System.out.println("범위 설정할 temp : 확인 -------> " + temp_range);
