@@ -103,12 +103,6 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.MyViewHolder
 
             ImageView rec = itemView.findViewById(R.id.rec); // 추천딱지 이미지...
 
-//            String userouter = "패딩" ;
-//            Query dbquery = mDatabase.child("ClosetInmyHand").child("UserAccount").child("Qph478hjZSMNHu9KKf9BPKm0jd83").child("images").orderByChild("outer").equalTo(userouter);
-
-
-//            rec.setVisibility(View.VISIBLE); // 여기서 이제 특정 값만 어떻게 보여지게 할 것인가..?
-            
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -122,7 +116,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.MyViewHolder
 
                     }
 
-//                    rec.setVisibility(View.VISIBLE); // 클릭하면 추천딱지 생김..ㅋㅋ
+//                    rec.setVisibility(View.VISIBLE); // 클릭 시 추천딱지
 
                 }
             });

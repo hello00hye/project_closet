@@ -34,9 +34,6 @@ public class Closet_all_ImageActivity extends AppCompatActivity {
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference("/ClosetInmyHand/UserAccount/Qph478hjZSMNHu9KKf9BPKm0jd83/images");
 
 
-//    private Context mContext; (?)
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,20 +124,7 @@ public class Closet_all_ImageActivity extends AppCompatActivity {
 
 
                 startActivity(intent);
-//                finish();
 
-//                final TextView topView = (TextView) view.findViewById(R.id.toptv_view);
-//                final TextView bottomView = (TextView) view.findViewById(R.id.bottomtv_view);
-//                final TextView outerView = (TextView) view.findViewById(R.id.outertv_view);
-//                final TextView seasonView = (TextView) view.findViewById(R.id.seasontv_view);
-//                final TextView customView = (TextView) view.findViewById(R.id.customtv_view);
-
-
-//                topView.setText(list.get(pos).getTop());
-//                bottomView.setText(list.get(pos).getBottom());
-//                outerView.setText(list.get(pos).getOuter());
-//                seasonView.setText(list.get(pos).getSeason());
-//                customView.setText(list.get(pos).getCustom());
 
             }
         });

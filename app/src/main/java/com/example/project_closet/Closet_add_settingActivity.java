@@ -227,8 +227,6 @@ public class Closet_add_settingActivity extends AppCompatActivity {
                 float temp_result = (float) Double.parseDouble(temp_string); // float 형태로 변환해서 넣기.
                 System.out.println("temp_result : type 확인 -------> " + ((Object) temp_result).getClass().getSimpleName()); // type 확인
 
-                // temp_에 담기 (안되는건가?)
-//                temp = (float) (Math.ceil(temp_result * 100) / 100.0);
 
                 // float 형태로 가져온 temp_result 반올림 해서 temp 에 담기
                 temp = (float) (Math.round(temp_result));
@@ -251,9 +249,6 @@ public class Closet_add_settingActivity extends AppCompatActivity {
 
                 Custom_post post = new Custom_post(temp, imageUrl, closet, keyId, feel);
                 postValues = post.toMap();
-
-                // 이렇게 하니 저장은 됐는데..
-//                mRootRef.push().setValue(postValues);
 
                 // 옷 keyId 값을 이용해서 목록 만들고 하위에 저장시키기 --> child(keyId)
                 mRootRef.child(keyId).setValue(postValues).addOnSuccessListener(new OnSuccessListener<Void>() {
