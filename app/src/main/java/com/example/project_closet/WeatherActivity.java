@@ -113,7 +113,7 @@ public class WeatherActivity extends AppCompatActivity {
         });
 
 
-        // 홈 화면 가기..
+        // 홈 화면 가기.
         btn_closet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

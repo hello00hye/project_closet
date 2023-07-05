@@ -56,7 +56,7 @@ public class Closet_rec_Activity extends Activity {
 
         // 온도 텍스트뷰
         TextView temp_tv = findViewById(R.id.tv_rec_temp);
-        // 한 줄로 나오게하기..(?)
+        // 한 줄로 나오게하기.
 //        temp_tv.setSingleLine();
 
         // 아래 피드백 줄 텍스트뷰
