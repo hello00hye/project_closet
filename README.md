@@ -14,12 +14,14 @@
 - **사용자만의 기준을 통해 조정되는 추천 옷**<br>추천한 옷에 대한 사용자 평가를 통해 사용자가 불만족스러웠을 때 카테고리별로 설정을 하면 똑같은 온도일때는 기존에 추천했던 옷이 아닌 사용자 평가를 반영하여 조금 더 사용자에게 맞추어진 옷 추천을 제공한다.
 
 ### 2.1 시스템 구성
-<img width="413" alt="image" src="https://user-images.githubusercontent.com/90433342/220084004-8cf559a0-7524-45a2-bc84-13bd923c09a4.png">
+<img width="413" alt="image" src="https://github.com/hello5hye/Closet-in-my-hand/assets/139055996/16ec5aff-39fb-446d-8e9c-5c4c0dc9c415">
 
-![image](https://github.com/hello5hye/Closet-in-my-hand/assets/139055996/16ec5aff-39fb-446d-8e9c-5c4c0dc9c415)
-
+<br/>
+<br/>
 
 #### 기능적 요구사항, 비기능적 요구사항 등 생략
+
+<br/>
 
 
 ### 3.1 시스템 설계
