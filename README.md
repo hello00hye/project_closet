@@ -16,6 +16,8 @@
 ### 2.1 시스템 구성
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/90433342/220084004-8cf559a0-7524-45a2-bc84-13bd923c09a4.png">
 
+![image](https://github.com/hello5hye/Closet-in-my-hand/assets/139055996/16ec5aff-39fb-446d-8e9c-5c4c0dc9c415)
+
 
 #### 기능적 요구사항, 비기능적 요구사항 등 생략
 
